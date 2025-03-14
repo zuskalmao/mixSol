@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --mixsol-dark: #080b12;
+  --mixsol-darker: #030508;
+  --mixsol-light: #f8f9fa;
+  --mixsol-primary: #22c55e;
+  --mixsol-secondary: #84cc16;
+  --mixsol-accent: #10b981;
+}
+
+body {
+  background-color: var(--mixsol-dark);
+  color: var(--mixsol-light);
+  font-family: 'Inter', sans-serif;
+}
+
+.glass-effect {
+  background: rgba(8, 11, 18, 0.8);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.blur-backdrop {
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+/* Override wallet adapter styles to match our UI */
+.wallet-adapter-button-wrapper {
+  display: inline-flex;
+}
+
+.wallet-adapter-button {
+  background: none !important;
+  padding: 0 !important;
+  height: auto !important;
+  border-radius: 0 !important;
+  color: inherit !important;
+  font-family: inherit !important;
+}
+
+.wallet-adapter-button-start-icon {
+  margin-right: 8px !important;
+}
+
+.wallet-adapter-dropdown-list {
+  background: var(--mixsol-darker) !important;
+  border-color: rgba(255, 255, 255, 0.05) !important;
+}
+
+.wallet-adapter-dropdown-list-item {
+  color: var(--mixsol-light) !important;
+}
+
+.wallet-adapter-dropdown-list-item:hover {
+  background: rgba(255, 255, 255, 0.05) !important;
+}
+
+.wallet-adapter-modal-wrapper {
+  background: var(--mixsol-darker) !important;
+}
+
+.wallet-adapter-modal-title {
+  color: var(--mixsol-light) !important;
+}
+
+.wallet-adapter-modal-content {
+  color: var(--mixsol-light) !important;
+}
+
+.wallet-adapter-modal-button-close {
+  background: rgba(255, 255, 255, 0.1) !important;
+}
